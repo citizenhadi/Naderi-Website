@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./lib/img-index/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>تاریخچه</title>
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      button,
+      input,
+      textarea {
+        font-family: "Vazirmatn", "Tahoma", "Qamil", sans-serif !important;
+      }
+      body {
+        background: linear-gradient(135deg, #181818 0%, #2d0b0b 100%);
+        color: #fff;
+        font-family: "Exo", sans-serif;
+        min-height: 100vh;
+      }
+      .history-card {
+        background: rgba(30, 0, 0, 0.85);
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+        padding: 2.5rem 2rem 2rem 2rem;
+        margin: 120px auto 2rem auto;
+        max-width: 700px;
+        border: 1.5px solid #ff4b2b44;
+        position: relative;
+        z-index: 2;
+      }
+      .history-card h1 {
+        color: #ff4b2b;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .history-card p {
+        color: #fff;
+        font-size: 1.15rem;
+        text-align: justify;
+        margin-bottom: 1.2rem;
+        line-height: 2.1;
+      }
+      .history-card ul {
+        background: #222;
+        border-radius: 12px;
+        padding: 1.2rem 1.5rem;
+        color: #ff4b2b;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        box-shadow: 0 4px 24px #ff4b2b33;
+      }
+      .on {
+        color: red !important;
+      }
+      .history-card ul li {
+        color: #fff;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+      .logo-website {
+        width: 150px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block;
+      }
+      @media (max-width: 700px) {
+        .history-card {
+          max-width: 98vw;
+          margin: 90px 0 1.5rem 0;
+          padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        }
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand h1-name" href="#"> Naderi Academy </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img
+              class="logo-website"
+              src="./lib/img-index/logo-website.JPG"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <hr />
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home Page</a
+                >
+                <a
+                  class="nav-link active on"
+                  aria-current="page"
+                  href="./history.html"
+                  >History</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./about-us.html"
+                  >About Us</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./persons.html"
+                  >Persons</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./shop.html"
+                  >Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </nav>
+    <div class="history-card">
+      <h1>Kung Fu Totaima</h1>
+      <p>
+        سبک کونگ فو توتایما، یکی از سبک های ایرانی هنر های رزمی است که توسط
+        استاد حیدر بهرامی نژاد بنیان گذاری شد. این سبک با تاکید بر فنون رزمی و
+        اصول اخلاقی، به عنوان یکی از سبک های برجسته رزمی ایران شناخته شده می شود
+        نقش استاد حیدر بهرامی نژاد در توسعه و ترویج این سبک، تاثیر بسزایی در رشد
+        هنر های رزمی کشور داشته است
+      </p>
+      <p>
+        استاد حیدر بهرامی نژاد در سال 1333 در روستای خوجین شهرستان خلخال، استان
+        اردبیل متولد شد. او در دوران کودکی به ورزش علاقه مند بود و فعالیت ورزشی
+        خود را با ژیمناستیک اغاز کرد. سپس در رشته های کشتی، کاراته، جودو و
+        تکواندو نیز مهارت هایی کسب کرد. در سال 1355 به عنوان شاگر ارشد استاد
+        چانگ در استان فارس فعالیت خود را در تکواندو اغاز کرد. در سال 1356 با
+        بنیان گذار کونگ فو توا اشنا شد و به دلیل جذابیت های خاص این رشته، کونگ
+        فو را به عنوان ورزش دلخواه خود انتخاب کرد. او از افسران ارشد نیروی هوایی
+        بود و اولین تجربه مربیگری خود را در سال 1359 در سالن ورزشی شهرک توحید که
+        متعلق به نیروی هوایی بود اغاز نمود. در سال 1380 سبک کونگ فو توتایما را
+        تاسیس کرد
+      </p>
+      <p>کونگ فو توتایما به طور کلی در چهار شاخه اصلی تدریس می گردد:</p>
+      <ul>
+        <li>سلاح های سرد: آموزش استفاده از سلاح های سنتی و مدرن</li>
+        <li>دفاع شخصی: تکنیک های مقابله با تهدیدات روزمره</li>
+        <li>
+          مبارزه: تکنیک های مبارزه فردی و گروهی تحت مرحله های خط یک الی هفت
+        </li>
+        <li>هنر های فردی: تکنیک های نمایشی و فرم های رزمی</li>
+      </ul>
+      <p>
+        استاد حیدر بهرامی نژاد در سال 1395 در یکی از بیمارستان های تهران درگذشت
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        gsap.from(".history-card h1", {
+          duration: 1,
+          y: -60,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        });
+        gsap.from(".history-card p", {
+          duration: 1,
+          x: 80,
+          opacity: 0,
+          stagger: 0.25,
+          delay: 0.5,
+          ease: "power2.out",
+        });
+        gsap.from(".history-card ul", {
+          duration: 1,
+          y: 60,
+          opacity: 0,
+          delay: 1.2,
+          ease: "power2.out",
+        });
+        gsap.from(".history-card ul li", {
+          duration: 0.7,
+          x: -40,
+          opacity: 0,
+          stagger: 0.15,
+          delay: 1.4,
+          ease: "power2.out",
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(47, 35, 35);
+  color: white !important;
+}
+.logo-website {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+.h1-name {
+  font-family: "Exo", sans-serif;
+}
+.on {
+  color: red !important;
+}
+.div-A {
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  text-align: center;
+  font-weight: bold;
+}
+.ko {
+  color: red;
+}

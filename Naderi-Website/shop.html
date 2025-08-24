@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./lib/img-index/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <title>فروشگاه</title>
+    <link rel="stylesheet" href="./lib/css/main.css" />
+    <style>
+      .shop-section {
+        margin-top: 120px;
+        padding: 2rem 0;
+        min-height: 70vh;
+      }
+      html,
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+      }
+      .shop-title {
+        color: #ff4b2b;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .products-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+      }
+      .arm {
+        width: 100px;
+        height: 300px;
+        margin: 0 auto;
+      }
+      @media (max-width: 700px) {
+        .shop-section {
+          margin-top: 90px;
+          padding: 1rem 0.2rem;
+        }
+        .products-row {
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand h1-name" href="#"> Naderi Academy </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img
+              class="logo-website"
+              src="./lib/img-index/logo-website.JPG"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <hr />
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home Page</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./history.html"
+                  >History</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./about-us.html"
+                  >About Us</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./persons.html"
+                  >Persons</a
+                >
+                <a
+                  class="nav-link active on"
+                  aria-current="page"
+                  href="./shop.html"
+                  >Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </nav>
+    <section class="shop-section container">
+      <h2 class="shop-title">محصولات فروشگاه</h2>
+      <div class="products-row">
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 1</h5>
+            <p class="card-text">250,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 2</h5>
+            <p class="card-text">300,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 3</h5>
+            <p class="card-text">350,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 4</h5>
+            <p class="card-text">400,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 5</h5>
+            <p class="card-text">450,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 6</h5>
+            <p class="card-text">500,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/hokm.gif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">حکم خط 7</h5>
+            <p class="card-text">550,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/khat.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">قیمت هر نوار خط</h5>
+            <p class="card-text">50,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/arm.png" class="card-img-top arm" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> نوار شلوار </h5>
+            <p class="card-text">100,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/logo-t.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> ارم گل گندم (جفت) </h5>
+            <p class="card-text">100,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/lebas.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> تیشرت مشکی بدون استین </h5>
+            <p class="card-text">500,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/t-shirt.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> تیشرت مشکی استین دار </h5>
+            <p class="card-text">600,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/t-shirt-red.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> تیشرت  قرمز  استین دار </h5>
+            <p class="card-text">600,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./lib/img-shop/kot-shalvar.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> لباس کانگ فو با علائم کامل (کت و شلوار) </h5>
+            <p class="card-text">1,500,000 تومان 
+              <br>
+              (سفارشی 2,000,000 تومان)</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> ساک ورزشی منقش به لوگوی تیم اکادمی استاد نادری </h5>
+            <p class="card-text">500,000 تومان</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">سایز لباس</h5>
+            <p class="card-text">
+              سایز نیم : 60 سانتی متر
+              <br />
+              سایز یک : 70 سانتی متر
+              <br />
+              سایز یک و نیم : 77 سانتی متر
+              <br />
+              سایز دو : 80 سانتی متر
+              <br />
+              سایز سه : 90 سانتی متر
+              <br />
+              سایز چهار : 95 سانتی متر
+              <br />
+              سایز پنج : 100 سانتی متر
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="svg-whats-app">
+      <a href="https://wa.me/989127013065" target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-whatsapp"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+          />
+        </svg>
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+      // GSAP animation: fade in and move up cards on page load
+      window.addEventListener('DOMContentLoaded', function() {
+        gsap.from('.card', {
+          opacity: 0,
+          y: 40,
+          duration: 0.7,
+          stagger: 0.15,
+          ease: 'power2.out'
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

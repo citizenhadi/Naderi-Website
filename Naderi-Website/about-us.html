@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./lib/img-index/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>درباره ما</title>
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      button,
+      input,
+      textarea {
+        font-family: "Vazirmatn", "Tahoma", "Qamil", sans-serif !important;
+      }
+      body {
+        background: linear-gradient(135deg, #181818 0%, #2d0b0b 100%);
+        color: #fff;
+        font-family: "Exo", sans-serif;
+        min-height: 100vh;
+      }
+      .about-card {
+        background: rgba(30, 0, 0, 0.85);
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+        padding: 2.5rem 2rem 2rem 2rem;
+        margin: 120px auto 2rem auto;
+        max-width: 650px;
+        border: 1.5px solid #ff4b2b44;
+        position: relative;
+        z-index: 2;
+      }
+      .about-card h2 {
+        color: #ff4b2b;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .about-card p {
+        color: #fff;
+        font-size: 1.15rem;
+        text-align: justify;
+        margin-bottom: 1.2rem;
+        line-height: 2.1;
+      }
+      .about-logo {
+        display: block;
+        margin: 0 auto 2rem auto;
+        max-width: 220px;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px #ff4b2b33;
+        border: 2px solid #ff4b2b;
+        background: #fff;
+      }
+      .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-map {
+        margin: 2.5rem auto 1.5rem auto;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px #ff4b2b33;
+        max-width: 650px;
+      }
+      .about-progress {
+        background: #222;
+        border-radius: 12px;
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        margin: 2rem auto 1.5rem auto;
+        max-width: 650px;
+        box-shadow: 0 4px 24px #ff4b2b33;
+      }
+      .about-progress h2 {
+        color: #ff4b2b;
+        margin-bottom: 1.5rem;
+        text-align: right;
+        direction: rtl;
+      }
+      .progress-bar {
+        background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+      }
+      .svg-whats-app {
+        width: 50px;
+        height: 50px;
+        border-radius: 9999px;
+        position: fixed;
+        bottom: 3px;
+        right: 3px;
+        z-index: 99;
+      }
+      .on {
+        color: red !important;
+      }
+      .svg-whats-app svg {
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+        fill: green;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+      .logo-website {
+        width: 150px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block;
+      }
+      @media (max-width: 700px) {
+        .about-card,
+        .about-progress,
+        .about-map {
+          max-width: 98vw;
+          margin: 90px 0 1.5rem 0;
+          padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        }
+        .about-logo {
+          max-width: 90vw;
+        }
+        .svg-whats-app {
+          width: 40px;
+          height: 40px;
+          right: 45%;
+        }
+        .svg-whats-app svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand h1-name" href="#"> Naderi Academy </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img
+              class="logo-website"
+              src="./lib/img-index/logo-website.JPG"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <hr />
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home Page</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./history.html"
+                  >History</a
+                >
+                <a
+                  class="nav-link active on"
+                  aria-current="page"
+                  href="./about-us.html"
+                  >About Us</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./persons.html"
+                  >Persons</a
+                >
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./shop.html"
+                  >Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </nav>
+    <div class="about-section">
+      <div class="about-card">
+        <img
+          class="about-logo"
+          src="./lib/img-index/logo-website.JPG"
+          alt="logo"
+        />
+        <h2>درباره ما</h2>
+        <p>
+          تیم آکادمی استاد نادری در سال 1380 با تاسیس سبک توتایما فعالیت خود را
+          از سبک توآ تغییر داده و در زمینه توتایما شروع به فعالیت کرد
+        </p>
+        <p>
+          استاد محمودرضا نادری دارنده دان 5 بین المللی توآ و دان 5 توتایما از
+          فدراسیون کونگ فو و هنرهای رزمی جمهوری اسلامی ایران به آدرس: تهران -
+          منطقه 10 - خیابان اصلی کمیل - خیابان سلمان فارسی - خیابان اکبریان -
+          مجموعه فرهنگی ورزشی سلمان فارسی
+        </p>
+      </div>
+      <div class="about-map">
+        <iframe
+          title="map-iframe"
+          src="https://neshan.org/maps/iframe/places/32c2a9074b2ec3b40f85f8c407e7167d#c35.680-51.378-20z-0p/35.68020198833539/51.377831580986296"
+          width="100%"
+          height="350"
+          allowfullscreen
+          loading="lazy"
+          style="border: 0"
+        ></iframe>
+      </div>
+      <div class="about-progress">
+        <h2>میزان رضایت مندی:</h2>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 80%"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="svg-whats-app">
+      <a href="https://wa.me/989127013065" target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-whatsapp"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+          />
+        </svg>
+      </a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

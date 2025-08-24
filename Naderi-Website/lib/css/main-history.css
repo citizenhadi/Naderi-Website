@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(81, 81, 80);
+}
+.logo-website {
+  width: 150px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+.on {
+  color: red !important;
+}
+.p-1-text {
+  text-align: center;
+  margin-top: 60px;
+  direction: rtl;
+}
+p {
+  color: black !important;
+  margin-top: 5px;
+  text-align: justify;
+}
+h1 {
+  margin: 10px 0;
+}
+.h1-name {
+  font-family: "Exo", sans-serif;
+}

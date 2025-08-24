@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./lib/img-index/logo.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <title>ورود ادمین</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #181818 0%, #2d0b0b 100%);
+      color: #fff;
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .admin-login-box {
+      background: rgba(30,0,0,0.92);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+      padding: 2.5rem 2rem 2rem 2rem;
+      max-width: 350px;
+      width: 100%;
+      margin: 40px auto;
+    }
+    .admin-login-box h2 {
+      color: #ff4b2b;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+    .form-control {
+      background: #222;
+      color: #fff;
+      border: 1px solid #333;
+    }
+    .form-control:focus {
+      background: #222;
+      color: #fff;
+      border-color: #ff4b2b;
+      box-shadow: 0 0 0 2px #ff4b2b33;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+      border: none;
+      font-weight: bold;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    }
+    .error-msg {
+      color: #ff4b2b;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 600px) {
+      .admin-login-box {
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-login-box">
+    <h2>ورود ادمین</h2>
+    <form id="adminLoginForm" autocomplete="off">
+      <div class="mb-3">
+        <label for="adminPassword" class="form-label">رمز ادمین</label>
+        <input type="password" class="form-control" id="adminPassword" required />
+      </div>
+      <button type="submit" class="btn btn-primary">ورود</button>
+      <div id="errorMsg" class="error-msg" style="display:none;"></div>
+    </form>
+  </div>
+  <script>
+    document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const pass = document.getElementById('adminPassword').value;
+      const errorMsg = document.getElementById('errorMsg');
+      if (pass === '57608790Hadi') {
+        window.location.href = 'admin-panel.html';
+      } else {
+        errorMsg.textContent = 'رمز اشتباه است!';
+        errorMsg.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html> 
